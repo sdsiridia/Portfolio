@@ -1,0 +1,77 @@
+@use "../abstracts/variables" as v;
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    
+
+    &__picture{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        min-width: 60%;    
+    }
+}
+.title {
+    color: v.$white;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    background-color: #181818;
+}
+.sociales {
+    display: flex;
+    z-index: 2;
+    gap: 18px;
+    margin-bottom: 40px;
+    background-color: #181818;
+    .img{
+        width: 24px;
+        height: 24px;
+        
+    }
+}
+
+.img-principal{
+    background-color: linear-gradient(to right,v.$gradient-start, v.$gradient-end);
+    object-fit: cover;
+}
+
+h1{
+font-size: 2.5rem;
+color: v.$white;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    // background-color: #181818;
+    position: relative;
+    p{
+        margin-top: 24px;
+        color: v.$white;
+        font-size: 1rem;
+    }
+    .btn-contact{
+        // padding: 10px 20px;
+        background-color: transparent;
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 24px;
+
+    }
+    .linea_adams{
+        position: absolute;
+        top: 95px;
+        right: 50px;
+    }
+}

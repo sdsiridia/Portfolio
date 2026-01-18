@@ -1,0 +1,138 @@
+@use "../abstracts/variables" as v;
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    position: relative;
+}
+.picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    // overflow: hidden;
+    // background-color: v.$gray;
+    // height: 420px;
+    // min-width: 50%;
+    // background-image: url("../../img/image_1_movil.png");
+    // background-position: bottom center;
+    // background-repeat: no-repeat;
+    // background-size: contain;
+}
+
+.img-container {
+    position: relative;
+    margin-bottom: 140px;
+    }
+
+.img-principal {
+    position: relative;
+    z-index: 1; /* Encima del SVG */
+    width: 200px; /* Ajusta el tamaño */
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: aqua;
+    }
+
+.sociales {
+    display: flex;
+    z-index: 2;
+    gap: 18px;
+    margin-bottom: 40px;
+    .img{
+        width: 24px;
+        height: 24px;
+        // cursor: pointer;
+    }
+}
+
+.title {
+    color: v.$white;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+.oval{
+    position: absolute;
+    top: 290px;
+    right: 3px;
+    
+}
+.oval-2{
+    // position: absolute;
+    // top: 200px;
+    // left: 0px;
+    // z-index: 2;
+    // background-image: none;
+    // position: absolute;
+    // top: 40%;
+    // left: 40px;
+    // z-index: 2;
+    // pointer-events: none;
+    position: absolute;
+      top: -20px; /* Ajusta según tu imagen */
+    left: 50%;
+    transform: translateX(-50%);
+      z-index: 0; /* Detrás de la foto */
+    
+}
+
+
+
+
+.img-principal{
+    // align-self: flex-end; /* Alinea la imagen al final (abajo) */
+    margin-top: 80px;
+    z-index: 1;
+    // height: 327px;
+    max-width: 190px;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.oval-2 img {
+    width: 120px;
+}
+
+
+
+h2 {
+  background-color: transparent; /* Hace el fondo transparente */
+}
+// // .img-principal {
+// //     margin-top: 80px; 
+// //     z-index: 1;
+// // }
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    margin-left: 16px;
+    margin-right: 16px;
+    h1{
+        font-size: 40px;
+        font-weight: 700;
+        color: v.$white;
+        font-family: v.$primary-font;
+        margin-top: 1rem;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        color: v.$white;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    h3{
+        font-size: 16px;
+        font-weight: 400;
+        color: v.$white;
+        margin-top: 1rem;
+        text-transform: uppercase;
+    }
+}
