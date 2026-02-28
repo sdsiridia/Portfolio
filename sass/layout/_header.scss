@@ -8,6 +8,7 @@
     align-items: center;
     padding: 40px 20px;
     @include m.breakpoint(tablet){
+        align-content: space-between;
         // width: 100%;
         // align-items: normal;
         // padding: 16px;
@@ -28,20 +29,17 @@
         z-index: 1;
         // background-color: #1a1a1a;
         @include m.breakpoint(tablet){
-            display: flex;
-        //     flex-direction: row;
-        // width: 100%;
+            display: block;
+            width: 100%;
         }
     }
     .nav__1{
-        @include m.breakpoint(tablet){
-        // width: 90%;    
+        @include m.breakpoint(tablet){    
         display: flex;
         // flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        // align-items: center;
-        overflow: none;
+        // overflow: none;
         margin: 0;
         padding: 0px;
         // background-color: #181818;
@@ -106,10 +104,14 @@
         z-index: 1;
     }
     // .img-container{
-    //         z-index: -2;
-    //         background-color: red;
-    //         .img-principal{
-    //         object-fit: cover;    
+    //         @include m.breakpoint(tablet){
+    //         position: absolute;
+    //         top: 2px;
+    //         right: 0px;
+    //             width: 40%;
+    //             height: auto;
+    //             z-index: -4;
+            
     //             }
     // }
 }
@@ -154,9 +156,13 @@
         // position: absolute;
         // top: 60px;
         // right: 170px;
-        width: 100%;
+        position: absolute;
+        top: 22px;
+        right: 0px;
+        width: 40%;
         height: auto;
-    }
+        z-index: -4;    
+        }
     @include m.breakpoint(desktop){
         display: none;
     }
@@ -206,6 +212,15 @@ color: v.$white;
         right: 50px;
     }
     @include m.breakpoint(tablet){
-        // display: none;
+        display: flex;
+        flex-direction: column;
+        // gap: 20px;
+    }
+}
+.container-info{
+    @include m.breakpoint(tablet){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // gap: 20px;
     }
 }
