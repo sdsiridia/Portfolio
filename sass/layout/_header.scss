@@ -234,7 +234,13 @@ color: v.$white;
             font-size: 1.2rem;
             display: block;
         }
-    }
+        .contacto{
+            @include m.breakpoint(tablet){
+                display: block;
+                }
+            }
+        }
+    
     .btn-contact{
         // padding: 10px 20px;
         @include m.btn-contact;
