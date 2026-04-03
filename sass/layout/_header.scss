@@ -224,6 +224,7 @@ color: v.$white;
     gap: 10px;
     margin-bottom: 20px;
     margin-top: 60px;
+    padding: 16px;
     // background-color: #181818;
     position: relative;
     p{
@@ -248,13 +249,13 @@ color: v.$white;
     }
     .linea_adams{
         position: absolute;
-        top: 95px;
+        top: 115px;
         right: 50px;
         @include m.breakpoint(tablet){
             width: 80%;
-            top: 240px;
+            top: 250px;
             // right: 10px;
-            left: 10px;
+            left: 12px;
         }
     }
     @include m.breakpoint(tablet){
