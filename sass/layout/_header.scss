@@ -12,7 +12,7 @@
     overflow: hidden;
     @include m.breakpoint(tablet){
         align-content: space-between;
-        padding-bottom: 0;
+        padding-bottom: 104px;
         // max-height: 300px;
 
         .title {
@@ -292,6 +292,7 @@ color: v.$white;
         @include m.breakpoint(tablet){
             width: 80%;
             top: 250px;
+            max-width: 400px;
             // right: 10px;
             left: 12px;
         }
