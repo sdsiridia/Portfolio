@@ -666,7 +666,7 @@
             flex-direction: column;
             color: white;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             gap: 20px;
             text-align: center;
             // background-color: #1a1a1a; 
@@ -675,7 +675,6 @@
             overflow: hidden;   // para que los ovulos no se salgan del contenedor
             background-color: v.$gray;
             width: 100%;
-            min-height: 100vh;
             // margin: 0;
             // padding: 0;
             h1{
@@ -709,7 +708,26 @@
             margin-top: 14px;
             max-width: 450px;
         }
-    }    
+            }
+            @include m.breakpoint(desktop){
+            
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: start;
+        margin-top: 0px;
+        padding: 84px;
+        
+        h1{
+            font-size: 48px;
+            // color: red;
+            margin:0%;
+        }
+        p{
+            font-size: 16px;
+            margin-top: 14px;
+            max-width: 450px;
+        }
+            }        
             
         }
     .hero__contact_form{
@@ -721,6 +739,16 @@
         // align-self: flex-end; // Alineado a la derecha como la imagen
         // justify-content: start;
         text-align: left;
+        @include m.breakpoint(desktop){
+            margin-top: 0px;
+            // position: relative;
+            // z-index: 1; // Se queda delante
+            max-width: 350px;
+            // width: 100%;
+            align-self: flex-end; // Alineado a la derecha como la imagen
+            justify-content: start;
+            text-align: left;
+        }
 
     .input-group {
         margin-bottom: 2rem;
@@ -756,4 +784,25 @@
                 width: 37%;
                 }
             }
+    }
+
+
+    .hero__contact__texto{
+        @include m.breakpoint(desktop){
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 20px;
+            text-align: left;
+            h1{
+                font-size: 48px;
+                color: v.$white;
+            }
+            p{
+                font-size: 16px;
+                color: v.$light-gray;
+                max-width: 450px;
+            }
+        }
     }
