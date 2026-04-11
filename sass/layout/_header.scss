@@ -221,8 +221,8 @@
         position: absolute;
         top: 0px;
         right: 0px;
-        width: 38%;
-        height: auto;
+        max-width: 300px;
+
         z-index: -4;    
         }
     @include m.breakpoint(desktop){
