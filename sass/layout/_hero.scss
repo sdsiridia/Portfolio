@@ -720,20 +720,23 @@
         margin-right: calc(50% - 50vw);
         padding-block: 84px;
         padding-inline: calc((100vw - 870px) / 2);
-        
-        h1{
-            font-size: 48px;
-            // color: red;
-            margin:0%;
-        }
-        p{
-            font-size: 16px;
-            margin-top: 14px;
-            max-width: 450px;
-        }
+        gap: 160px;
+        // h1{
+        //     font-size: 48px;
+        //     color: red;
+        //     margin:0%;
+        // }
+        // p{
+        //     font-size: 16px;
+        //     color:red;
+        //     margin-top: 14px;
+        //     max-width: 200px;
+        // }
             }        
             
         }
+
+
     .hero__contact_form{
         margin-top: 50px;
         position: relative;
@@ -804,9 +807,9 @@
                 color: v.$white;
             }
             p{
-                font-size: 16px;
-                color: v.$light-gray;
-                max-width: 450px;
+                font-size: 14px;
+                color: v.$gray_3;
+                max-width: 350px;
             }
         }
     }
