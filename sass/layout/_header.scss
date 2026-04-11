@@ -235,11 +235,11 @@
         display: none;
     }
     @include m.breakpoint(desktop){
-        display: none; //por ahora la desaparesco
+        display: block; //por ahora la desaparesco
         position: absolute;
-        top: 60px;
-        right: 170px;
-        width: 100%;
+        top: 0px;
+        right: 0px;
+        width: 350px;
         height: auto;
     }
 }
@@ -265,6 +265,14 @@ color: v.$white;
     padding: 16px;
     // background-color: #181818;
     position: relative;
+    h1{
+        @include m.breakpoint(desktop){
+        font-size: 3.5rem;
+        span{
+            display: inline;
+            }
+        }
+    }
     p{
         margin-top: 24px;
         color: v.$white;
@@ -272,6 +280,12 @@ color: v.$white;
         @include m.breakpoint(tablet){
             font-size: 1.2rem;
             display: block;
+        }
+        @include m.breakpoint(desktop){
+            font-size: 0.9rem;
+            display: block;
+            max-width: 350px;
+            color: v.$gray_3;
         }
         .contacto{
             @include m.breakpoint(tablet){
@@ -295,6 +309,14 @@ color: v.$white;
             max-width: 400px;
             // right: 10px;
             left: 12px;
+        }
+        @include m.breakpoint(desktop){
+            width: 80%;
+            height: 80%;
+            top: 24px;
+            max-width: 350px;
+            // right: 10px;
+            left: 75px;
         }
     }
     @include m.breakpoint(tablet){
