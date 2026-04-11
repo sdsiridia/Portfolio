@@ -715,7 +715,11 @@
         align-items: flex-start;
         justify-content: start;
         margin-top: 0px;
-        padding: 84px;
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+        padding-block: 84px;
+        padding-inline: calc((100vw - 870px) / 2);
         
         h1{
             font-size: 48px;
