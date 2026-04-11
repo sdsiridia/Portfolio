@@ -9,9 +9,19 @@
     padding: 40px 20px;
     width: 100%;
     margin-inline: auto;
-    overflow-x: hidden;
+    overflow: hidden;
     @include m.breakpoint(tablet){
         align-content: space-between;
+        padding-bottom: 0;
+        // max-height: 300px;
+
+        .title {
+            margin-bottom: 0;
+        }
+
+        .sociales {
+            margin-bottom: 0;
+        }
         // width: 100%;
         // align-items: normal;
         // padding: 16px;
@@ -146,15 +156,16 @@
         position: absolute;
         top: 270px;
         right: -350px;
-        width: 100%;
-        height: 100%;
+        width: auto;
+        height: auto;
         z-index: 1;
+        pointer-events: none;
         @include m.breakpoint(tablet){
             top: 415px;
             right: -710px;
             // left: 10px;
-            width: 100%;
-            height: 100%;
+            width: auto;
+            height: auto;
         }
     }
     // .img-container{
@@ -264,7 +275,7 @@ color: v.$white;
         }
         .contacto{
             @include m.breakpoint(tablet){
-                display: block;
+                // display: block;
                 }
             }
         }
@@ -289,6 +300,7 @@ color: v.$white;
         display: flex;
         flex-direction: column;
         align-items: start;
+        margin-top: 0;
         // gap: 20px;
     }
 }
