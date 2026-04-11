@@ -12,9 +12,7 @@ body {
     background-color: v.$black; /* Fondo negro */
     color: #fff;
     @include m.breakpoint(desktop){
-        display: block;
-        justify-content: center;
-        align-items: center;
-        max-width: 870px;
+        max-width: 1200px;
+        margin-inline: auto;
     }
 }
