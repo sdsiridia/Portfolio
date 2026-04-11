@@ -7,6 +7,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    margin-inline: auto;
     // margin-top:20px;
     padding: 87px 16px 40px 16px;
     color: v.$white;
@@ -47,7 +49,7 @@
             justify-content: space-between;
             align-items: center;
             background-color: v.$gray;
-            width: 100vw;  /* 100% del ancho de la ventana */
+            width: 100%;
             // height: 100vh; /* 100% del alto de la ventana */
             gap:0;
             .title {

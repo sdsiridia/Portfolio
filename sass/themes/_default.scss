@@ -1,4 +1,6 @@
 @use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
 * {
     font-family: v.$primary-font;
     box-sizing: border-box;
@@ -9,4 +11,10 @@
 body {
     background-color: v.$black; /* Fondo negro */
     color: #fff;
+    @include m.breakpoint(desktop){
+        display: block;
+        justify-content: center;
+        align-items: center;
+        max-width: 870px;
     }
+}

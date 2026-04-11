@@ -7,6 +7,9 @@
     flex-direction: column;
     align-items: center;
     padding: 40px 20px;
+    width: 100%;
+    margin-inline: auto;
+    overflow-x: hidden;
     @include m.breakpoint(tablet){
         align-content: space-between;
         // width: 100%;
@@ -16,8 +19,18 @@
         // max-width: 90%;
         // // max-height: auto;
         // overflow: auto;
-
     }
+    @include m.breakpoint(desktop){
+        // flex-direction: row;
+        // justify-content: space-between;
+        // align-items: center;
+            // overflow: none;
+        max-width: 870px;
+        // margin: 0;
+        // padding: 40px 20px;
+        // align-items: center;
+        }
+
     
     &__nav{
         display: flex;
@@ -32,6 +45,10 @@
             display: block;
             width: 100%;
         }
+        // @include m.breakpoint(desktop){
+        //     display: block;
+        //     width: 100%;
+        // }
     }
     .nav__1{
         @include m.breakpoint(tablet){    
@@ -44,6 +61,16 @@
         padding: 0px;
         // background-color: #181818;
         }
+        // @include m.breakpoint(desktop){
+        //     display: flex;
+        //     flex-direction: row;
+        //     justify-content: space-between;
+        //     align-items: center;
+        //     // overflow: none;
+        //     max-width: 1250px;
+        //     margin: 0;
+        //     padding: 0px;
+        // }
     }
     .oval{
         &__1{
@@ -197,7 +224,7 @@
         display: none;
     }
     @include m.breakpoint(desktop){
-        display: block;
+        display: none; //por ahora la desaparesco
         position: absolute;
         top: 60px;
         right: 170px;
