@@ -73,16 +73,17 @@
         padding: 0px;
         // background-color: #181818;
         }
-        // @include m.breakpoint(desktop){
+        @include m.breakpoint(desktop){
         //     display: flex;
         //     flex-direction: row;
         //     justify-content: space-between;
         //     align-items: center;
         //     // overflow: none;
         //     max-width: 1250px;
-        //     margin: 0;
+            margin-bottom: 80px;
         //     padding: 0px;
-        // }
+        }
+
     }
     .oval{
         &__1{
@@ -96,7 +97,7 @@
             @include m.breakpoint(tablet){
             width: 32%;
             top: 90px;
-        } 
+            } 
         }
         &__2{
         position: absolute; 
@@ -153,6 +154,50 @@
         // width: 50px;
         // height: 50px; 
         // background: none;
+        @include m.breakpoint(desktop){
+            display: none;
+            }
+        &__Desktop{
+            display: none;
+            @include m.breakpoint(desktop){
+                display: block;
+                // &__1{
+                //     width: 30%;
+                //     stroke: v.$gray_2;
+                //     left: -50px;
+                //     top: 175px;
+                //     position: absolute;
+                // }
+                &__2{
+                    width: 30%;
+                    stroke: v.$gray_2;
+                    left: -50px;
+                    top: 165px;
+                    position: absolute;
+                }
+                &__3{
+                    width: 30%;
+                    stroke: v.$gray_2;
+                    left: -50px;
+                    top: 155px;
+                    position: absolute;
+                }
+                &__4{
+                    width: 30%;
+                    stroke: v.$gray_2;
+                    left: -50px;
+                    top: 145px;
+                    position: absolute;   
+                }
+                &__5{
+                    width: 30%;
+                    stroke: v.$gray_2;
+                    left: -50px;
+                    top: 135px;
+                    position: absolute;   
+                }
+            }
+        }
     }
     .circulo{
         position: absolute;

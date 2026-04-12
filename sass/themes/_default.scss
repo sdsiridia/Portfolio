@@ -11,8 +11,44 @@
 body {
     background-color: v.$black; /* Fondo negro */
     color: #fff;
-    @include m.breakpoint(desktop){
-        // max-width: 870px;
-        // margin-inline: auto;
+    position: relative;
+    // @include m.breakpoint(desktop){
+    //     // max-width: 870px;
+    //     // margin-inline: auto;
+    // }
+}
+
+.oval__Desktop__1,
+.oval__Desktop__2,
+.oval__Desktop__3,
+.oval__Desktop__4,
+.oval__Desktop__5 {
+    display: none;
+}
+
+// .oval__Desktop{
+//     display: none;
+// }
+
+@include m.breakpoint(desktop){
+    .oval__Desktop__1,
+    .oval__Desktop__2,
+    .oval__Desktop__3,
+    .oval__Desktop__4,
+    .oval__Desktop__5 {
+        display: block;
+        position: absolute;
+        width: 30%;
+        height: auto;
+        stroke: v.$gray_2;
+        left: 10px;
+        pointer-events: none;
+        z-index: 0;
     }
+
+    .oval__Desktop__1 { top: 125px; }
+    .oval__Desktop__2 { top: 135px; }
+    .oval__Desktop__3 { top: 145px; }
+    .oval__Desktop__4 { top: 155px; }
+    .oval__Desktop__5 { top: 165px; }
 }
