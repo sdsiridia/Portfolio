@@ -30,7 +30,7 @@ body {
 //     display: none;
 // }
 
-@include m.breakpoint(desktop){
+@include m.breakpoint(desktop){    
     .oval__Desktop__1,
     .oval__Desktop__2,
     .oval__Desktop__3,
@@ -45,10 +45,28 @@ body {
         pointer-events: none;
         z-index: 0;
     }
-
+}
     .oval__Desktop__1 { top: 125px; }
     .oval__Desktop__2 { top: 135px; }
     .oval__Desktop__3 { top: 145px; }
     .oval__Desktop__4 { top: 155px; }
     .oval__Desktop__5 { top: 165px; }
-}
+
+
+// .circulo__Desktop__1 {
+//     display: none;
+//     @include m.breakpoint(desktop){
+//         display: block;
+//         position: absolute;
+//         top: 240px;
+//         right: 100px;
+//         width: 30%;
+//         height: auto;
+//         stroke:v.$gray_2;
+//         // z-index: 4;
+//         pointer-events: none;
+//         .circulo{
+//             display: none;
+//         }
+//     }
+// }
