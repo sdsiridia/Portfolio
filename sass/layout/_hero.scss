@@ -722,11 +722,11 @@
         align-items: flex-start;
         justify-content: start;
         margin-top: 0px;
-        width: 100vw;
-        margin-left: calc(50% - 50vw);
-        margin-right: calc(50% - 50vw);
+        max-width: 1200px;
+        width: 100%;
+        margin-inline: auto;
         padding-block: 84px;
-        padding-inline: calc((100vw - 870px) / 2);
+        padding-inline: clamp(16px, calc((100vw - 870px) / 2), calc((1200px - 870px) / 2));
         gap: 160px;
         // h1{
         //     font-size: 48px;
@@ -742,6 +742,31 @@
             }        
             
         }
+
+.hero__contact__oval__Desktop{
+    display: none;
+    @include m.breakpoint(desktop){
+        display: block;
+        position: absolute;
+        overflow: hidden;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+
+        svg{
+            position: absolute;
+            left: -250px;
+            width: 45%;
+            height: auto;
+            stroke: v.$gray_2;
+        }
+        .hero__contact__oval__Desktop__1 { top: 310px; }
+        .hero__contact__oval__Desktop__2 { top: 300px; }
+        .hero__contact__oval__Desktop__3 { top: 290px; }
+        .hero__contact__oval__Desktop__4 { top: 280px; }
+        .hero__contact__oval__Desktop__5 { top: 270px; }
+    }
+}
 
 
     .hero__contact_form{
@@ -802,6 +827,8 @@
 
 
     .hero__contact__texto{
+        position: relative;
+        z-index: 1;
         @include m.breakpoint(desktop){
             display: flex;
             flex-direction: column;
