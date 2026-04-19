@@ -10,6 +10,7 @@
     width: 100%;
     margin-inline: auto;
     overflow: hidden;
+    max-width: 1200px;
     @include m.breakpoint(tablet){
         align-content: space-between;
         padding-bottom: 104px;
@@ -30,19 +31,65 @@
         // // max-height: auto;
         // overflow: auto;
     }
-    @include m.breakpoint(desktop){
-        // flex-direction: row;
-        // justify-content: space-between;
-        // align-items: center;
-            // overflow: none;
-        max-width: 870px;
-        margin-inline: auto;
-        // max-width: 70%;
-        // margin: 0;
-        // padding: 40px 20px;
-        // align-items: center;
-        }
+    // @include m.breakpoint(desktop){
+    //     // flex-direction: row;
+    //     // justify-content: space-between;
+    //     // align-items: center;
+    //         // overflow: none;
+    //     // max-width: 870px;
+    //     margin-inline: auto;
+    //     // max-width: 70%;
+    //     // margin: 0;
+    //     // padding: 40px 20px;
+    //     // align-items: center;
+    //     }
+    &__container{
+            .oval__Desktop__1,
+            .oval__Desktop__2,
+            .oval__Desktop__3,
+            .oval__Desktop__4,
+            .oval__Desktop__5 {
+                display: none;
+                        }
 
+            // .oval__Desktop{
+            //     display: none;
+            // }
+            @include m.breakpoint(desktop){
+                max-width: 870px;
+                .oval__Desktop     {
+                    display: block;
+                    // position: relative;
+                    width: 100%;
+                    height: auto;
+                    stroke: v.$gray_2;
+                    // left: 200px;
+                    pointer-events: none;
+                    z-index: 0;
+                        }  
+                .oval__Desktop__1,
+                .oval__Desktop__2,
+                .oval__Desktop__3,
+                .oval__Desktop__4,
+                .oval__Desktop__5
+                                {
+                    display: block;
+                    position: absolute;
+                    width: 30%;
+                    height: auto;
+                    stroke: v.$gray_2;
+                    // left: 200px;
+                    pointer-events: none;
+                    // z-index: 0;
+                        }
+    
+            .oval__Desktop__1 { top: 115px;  }
+            .oval__Desktop__2 { top: 105px; }
+            .oval__Desktop__3 { top: 95px; }
+            .oval__Desktop__4 { top: 85px; }
+            .oval__Desktop__5 { top: 75px; }
+                }
+    }
     
     &__nav{
         display: flex;
@@ -227,6 +274,7 @@
     //             }
     // }
 }
+
 .title {
     color: v.$white;
     font-size: 1.7rem;
@@ -251,7 +299,7 @@
     @include m.breakpoint(desktop){
         position: absolute;
         top: 0px;
-        right: 0px;
+        right: 7%;
         width: 350px;
     }
 }
@@ -303,7 +351,8 @@
     @include m.breakpoint(desktop){
         display: block;
         position: absolute;
-        left: 475px;
+        // left: 700px;
+        right: 31%;
         // bottom: 10;
         top:420px;
         width: 10%;

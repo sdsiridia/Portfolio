@@ -3,7 +3,10 @@
 .hero {
     width: 100%;
     margin-inline: auto;
+    position: relative;
+    max-width: 1200px;
     &__skills{
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -14,6 +17,10 @@
             font-size: 2.5rem;
             color: v.$white;
         }
+        @include m.breakpoint(desktop){
+            
+        }
+        
         .linea_hero{
             &_movil{
                 display:block;
@@ -24,7 +31,6 @@
             &_desktop{
                 display:none;
             }
-
         @include m.breakpoint(tablet){
             .linea_hero{
                 &_movil{
@@ -433,6 +439,7 @@
                     }
                 }
                 @include m.breakpoint(desktop){
+                position: relative;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: start;
@@ -813,3 +820,34 @@
             }
         }
     }
+.hero__oval__Desktop {
+            display: none;
+            @include m.breakpoint(desktop){
+                    display: block;
+                    position: absolute;
+                    inset: 0;
+                    overflow: hidden;
+                    // position: relative;
+                    // left: 0;
+                    // bottom: 0;
+                    // width: 280px;
+                    // height: auto;
+                    pointer-events: none;
+                    z-index: 3;
+                    // stroke: v.$gray_2;
+                    svg {
+                        position: absolute;
+                        right: 0;
+                        // bottom:500;
+                        width: 25%;
+                        height: auto;
+                        stroke: v.$gray_2;
+                        z-index: 3;
+                        }
+                    .hero__oval__Desktop__1 { top: 400px; right: -80px; }
+                    .hero__oval__Desktop__2 { top: 410px; right: -80px;}
+                    .hero__oval__Desktop__3 { top: 420px; right: -80px;}
+                    .hero__oval__Desktop__4 { top: 430px; right: -80px;}
+                    .hero__oval__Desktop__5 { top: 440px; right: -80px;}
+                }
+        }
