@@ -52,9 +52,9 @@
                 display: none;
                         }
 
-            // .oval__Desktop{
-            //     display: none;
-            // }
+            .oval__Desktop{
+                display: none;
+            }
             @include m.breakpoint(desktop){
                 max-width: 870px;
                 .oval__Desktop     {
